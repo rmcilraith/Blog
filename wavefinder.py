@@ -1,1 +1,1 @@
-from app import wave_finder_app
+from app import wavefinder_app
