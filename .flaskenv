@@ -1,1 +1,1 @@
-FLASK_APP=wavefinder.py
+FLASK_APP=blog.py

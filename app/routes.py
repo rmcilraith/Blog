@@ -1,14 +1,14 @@
 from flask import render_template, flash, redirect, url_for
-from app import wavefinder_app
+from app import blog_app
 from app.forms import LoginForm
 
-@wavefinder_app.route('/')
-@wavefinder_app.route('/index')
+@blog_app.route('/')
+@blog_app.route('/index')
 def index():
     user = {'username': 'Rick'}
     return render_template('index.html', title='Home', user=user)
 
-@wavefinder_app.route('/login', methods=['GET', 'POST'])
+@blog_app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
     if form.validate_on_submit():
