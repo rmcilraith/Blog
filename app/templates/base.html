@@ -1,13 +1,13 @@
 <html>
     <head>
         {% if title %}
-        <title>{{ title }} - Wave Finder</title>
+        <title>{{ title }} - Blog</title>
         {% else %}
-        <title>Wave Finder</title>
+        <title>Blog</title>
         {% endif %}
     </head>
     <body>
-        <div>Wave Finder: 
+        <div>Blog: 
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('login') }}">Login</a>
         </div>
@@ -21,7 +21,6 @@
         </ul>
         {% endif %}
         {% endwith %}
-        <a href="http://magicseaweed.com"><img src="https://im-1-uk.msw.ms/msw_powered_by.png"></a>
         {% block content %}{% endblock %}
     </body>
 </html>
